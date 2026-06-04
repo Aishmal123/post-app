@@ -7,7 +7,9 @@ let allPosts=[];
 let Posts=[];
 btn.addEventListener('click',(e)=>{
     e.preventDefault();
+
    if (Posts.length === 0) {
+    document.innerHTML="loading..."
         fetchData();
     } else {
         searchPost();
@@ -29,6 +31,7 @@ async function fetchData(){
         let data= await response.json();
         console.log(data);
         allPosts=data;
+        let data1=data.slice(0,10);
 postData(allPosts);
     }catch(error){
         console.log ("unable to fetch data from given api");

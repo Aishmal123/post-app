@@ -8,11 +8,14 @@
     padding:15px;
     background-color:blue;
     color:white;
+  
+    max-width: 100%;
 }
 .main-data{
     display:flex;
     justify-content:space-around;
     margin-top:80px;
+    
 
 }
 form {
@@ -27,9 +30,9 @@ form input{
     border-radius: 10px;
     margin:20px;
     border:1px solid grey;
-    width: 450px;
     font-size :20px;
     text-transform:uppercase;
+    max-width: 100%;
 }
 form button{
     padding: 20px;
